@@ -1,0 +1,17 @@
+services:
+  app:
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+  json-server:
+    image: clue/json-server
+    ports:
+      - "3001:3001"
+    volumes:
+      - ./data:/data
+    command: json-server --watch ./db/db.json --port 4000 --host 0.0.0.0
