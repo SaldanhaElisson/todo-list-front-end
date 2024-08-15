@@ -1,4 +1,4 @@
-# React + TypeScript + Vite
+# APP Todo List
 
 # Meu Projeto
 
@@ -10,6 +10,7 @@ Este projeto é uma aplicação web que permite gerenciar uma lista de tarefas. 
 
 ## Tecnologias Utilizadas
 
+- TypeScript
 - React
 - json-server
 - Docker
@@ -21,6 +22,11 @@ Antes de começar, certifique-se de ter o Node na versão 10.8.2.
 ## Como Rodar o Projeto
 
 - Clone este repositório em sua máquina local
+- Instale as depedências
+
+```bash
+    npm install
+```
 
 - Depois execute o comando para executar o json-server
 
@@ -56,3 +62,8 @@ Para rodar os testes execute o seguinte comando
 - **styles**: Inclui arquivos de estilo, como CSS ou SCSS, usados para estilizar a aplicação.
 - **types**: Armazena definições de tipos TypeScript ou PropTypes para validação de tipos no JavaScript.
 - **utils**: Contém funções utilitárias que são usadas em várias partes da aplicação.
+
+**Obs**
+O arquivo .env foi deixado propositotalmente no git para facilitar acessar o software.
+
+**Todo o software está responsivo.**
